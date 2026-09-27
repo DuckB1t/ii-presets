@@ -6,13 +6,14 @@
             "id": "reguler-main",
             "name": "Reguler Main",
             "description": "",
-            "version": "1.0.0",
-            "configVersion": 26,
+            "version": "1.0.1",
+            "configVersion": 27,
             "path": "presets/reguler-main",
             "wallpaper": "presets/reguler-main/wallpaper.jpg",
             "screenshots": [
                 "presets/reguler-main/screenshots/1-cb06f054.png"
-            ]
+            ],
+            "banner": "presets/reguler-main/banner.jpg"
         }
     ]
 }
