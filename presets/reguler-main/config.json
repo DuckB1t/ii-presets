@@ -10,7 +10,7 @@
         "keepSelection": false,
         "lastGranularity": "day",
         "lastMetric": "fg",
-        "lastView": "apps",
+        "lastView": "limits",
         "minDurationSec": 0,
         "overlayEnabled": true,
         "rememberLastView": true,
@@ -150,12 +150,12 @@
                 "placementStrategy": "free",
                 "positions": {
                     "eDP-1": {
-                        "x": 90,
+                        "x": 60,
                         "y": 130
                     }
                 },
                 "widgetId": "clock_hori",
-                "x": 90,
+                "x": 60,
                 "y": 130
             },
             {
@@ -166,13 +166,13 @@
                     "eDP-1": {
                         "scale": 0.9,
                         "x": 78,
-                        "y": 420
+                        "y": 430
                     }
                 },
                 "scale": 0.9,
                 "widgetId": "water_reminder",
                 "x": 78,
-                "y": 420
+                "y": 430
             },
             {
                 "id": "widget_quote_1790166416756",
@@ -182,13 +182,13 @@
                     "eDP-1": {
                         "scale": 0.9,
                         "x": 304,
-                        "y": 420
+                        "y": 430
                     }
                 },
                 "scale": 0.9,
                 "widgetId": "quote",
                 "x": 304,
-                "y": 420
+                "y": 430
             },
             {
                 "id": "widget_at_a_glance_1790166441754",
@@ -203,6 +203,14 @@
                 "widgetId": "at_a_glance",
                 "x": 90,
                 "y": 80
+            },
+            {
+                "id": "widget_ext:end4-pC-visualiser_1790508388530",
+                "lockBehavior": "hide",
+                "placementStrategy": "free",
+                "widgetId": "ext:end4-pC-visualiser",
+                "x": 200,
+                "y": 200
             }
         ],
         "animateWallpaperChanges": true,
@@ -238,7 +246,7 @@
             "radius": 50
         },
         "hideWhenFullscreen": true,
-        "lightModeWallpaperPath": "$HOME/Pictures/Wallpapers/Tahoe-Light.jpg",
+        "lightModeWallpaperPath": "$HOME/Pictures/Wallpapers/dharmx-digital/a_tower_in_a_forest.png",
         "lockscreenWallpaperPath": "",
         "materialShapeScale": 1,
         "materialShapeShadow": true,
@@ -302,7 +310,7 @@
         "wallpaperAnimation": "random",
         "wallpaperEngineAssetsPath": "",
         "wallpaperEngineId": "",
-        "wallpaperPath": "$HOME/Pictures/Wallpapers/Tahoe-Light.jpg",
+        "wallpaperPath": "$HOME/Pictures/Wallpapers/dharmx-digital/a_tower_in_a_forest.png",
         "widgets": {
             "ai_chat": {
                 "enable": false,
@@ -1358,7 +1366,7 @@
                 {
                     "centered": false,
                     "id": "system_tray",
-                    "visible": true
+                    "visible": false
                 },
                 {
                     "centered": false,
@@ -1565,12 +1573,13 @@
             "showKeyboardToggle": false,
             "showMicToggle": false,
             "showPerformanceProfileToggle": true,
+            "showPhoneMirror": false,
             "showScreenRecord": true,
             "showScreenSnip": false,
             "showWallpaperToggle": false
         },
         "verbose": true,
-        "vertical": true,
+        "vertical": false,
         "weather": {
             "enable": false,
             "fetchInterval": 10,
@@ -1901,12 +1910,6 @@
                             "type": "mic"
                         },
                         {
-                            "id": "iosClockWidget",
-                            "sizeH": 2,
-                            "sizeW": 2,
-                            "type": "iosClockWidget"
-                        },
-                        {
                             "id": "compactMediaWidget",
                             "sizeH": 2,
                             "sizeW": 4,
@@ -1926,31 +1929,37 @@
                         },
                         {
                             "id": "idleInhibitor",
-                            "sizeH": 2,
-                            "sizeW": 1,
+                            "sizeH": 1,
+                            "sizeW": 2,
                             "type": "idleInhibitor"
                         },
                         {
-                            "id": "weatherIconShape",
-                            "sizeH": 1,
+                            "id": "calendarMonthGridWidget",
+                            "sizeH": 4,
+                            "sizeW": 5,
+                            "type": "calendarMonthGridWidget"
+                        },
+                        {
+                            "id": "weatherCard",
+                            "sizeH": 2,
                             "sizeW": 2,
-                            "type": "weatherIconShape"
+                            "type": "weatherCard"
                         },
                         {
-                            "id": "notificationListWidget",
-                            "sizeH": 5,
-                            "sizeW": 4,
-                            "type": "notificationListWidget"
+                            "id": "mobileBatteryWidget",
+                            "sizeH": 4,
+                            "sizeW": 2,
+                            "type": "mobileBatteryWidget"
                         },
                         {
-                            "id": "systemResourcesWidget",
-                            "sizeH": 5,
-                            "sizeW": 3,
-                            "type": "systemResourcesWidget"
+                            "id": "discordVoice",
+                            "sizeH": 2,
+                            "sizeW": 1,
+                            "type": "discordVoice"
                         }
                     ]
                 ],
-                "rows": 10
+                "rows": 15
             },
             "showActivityHero": true
         },
@@ -2807,8 +2816,6 @@
         "rows": 2,
         "scale": 0.18,
         "scrollingStyle": {
-            "backgroundStyle": "blur",
-            "dimPercentage": 50,
             "zoomStyle": "out"
         },
         "showIcons": true,
@@ -2838,6 +2845,7 @@
             "setAsDefault": false
         },
         "mirrorNotificationsToDesktop": true,
+        "remoteCommands": true,
         "scrcpy": {
             "alwaysOnTop": true,
             "appMode": {
@@ -2857,19 +2865,25 @@
             "autoResume": true,
             "autoWirelessIp": true,
             "bitRate": "8M",
+            "clipboardSync": true,
             "embed": {
                 "enabled": true,
                 "keepWarmSeconds": 120
             },
             "fullscreen": true,
+            "keyboardMode": "uhid",
             "maxFps": 0,
             "maxSize": 0,
             "noAudio": false,
             "noPowerOn": false,
             "pinAdbPort": false,
+            "recording": {
+                "folder": "",
+                "withAudio": true
+            },
             "showTerminal": false,
             "showTouches": true,
-            "stayAwake": false,
+            "stayAwake": true,
             "turnScreenOff": false,
             "useWireless": true,
             "videoBuffer": 0,
@@ -2972,6 +2986,19 @@
     },
     "screenSnip": {
         "savePath": ""
+    },
+    "screenTime": {
+        "alwaysAllowed": [],
+        "autoCloseSeconds": 0,
+        "enable": true,
+        "limits": [],
+        "notifyOnLimit": true,
+        "overdueReminderMinutes": 15,
+        "pinForEdits": false,
+        "pinHash": "",
+        "schedules": [],
+        "warnLastMinute": true,
+        "warnMinutes": 5
     },
     "search": {
         "appearance": {
