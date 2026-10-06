@@ -6,10 +6,10 @@
             "id": "reguler-main",
             "name": "Reguler Main",
             "description": "",
-            "version": "1.0.2",
-            "configVersion": 27,
+            "version": "1.0.3",
+            "configVersion": 28,
             "path": "presets/reguler-main",
-            "wallpaper": "presets/reguler-main/wallpaper.png",
+            "wallpaper": "presets/reguler-main/wallpaper.jpg",
             "screenshots": [
                 "presets/reguler-main/screenshots/1-42edb8a0.png",
                 "presets/reguler-main/screenshots/2-6f4c5847.png",

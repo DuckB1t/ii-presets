@@ -3,8 +3,8 @@
     "name": "Reguler Main",
     "author": "DuckB1t",
     "description": "",
-    "version": "1.0.2",
-    "configVersion": 27,
+    "version": "1.0.3",
+    "configVersion": 28,
     "config": "config.json",
     "screenshots": [
         "screenshots/1-42edb8a0.png",
@@ -12,6 +12,11 @@
         "screenshots/3-cb06f054.png"
     ],
     "changelog": [
+        {
+            "version": "1.0.3",
+            "date": "2026-10-06",
+            "notes": "patch"
+        },
         {
             "version": "1.0.2",
             "date": "2026-09-28",
@@ -28,6 +33,6 @@
             "notes": "First release."
         }
     ],
-    "wallpaper": "wallpaper.png",
+    "wallpaper": "wallpaper.jpg",
     "banner": "banner.jpg"
 }

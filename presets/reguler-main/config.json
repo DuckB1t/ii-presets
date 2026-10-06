@@ -10,7 +10,7 @@
         "keepSelection": false,
         "lastGranularity": "day",
         "lastMetric": "fg",
-        "lastView": "limits",
+        "lastView": "apps",
         "minDurationSec": 0,
         "overlayEnabled": true,
         "rememberLastView": true,
@@ -89,7 +89,7 @@
                     "name": "k82"
                 }
             ],
-            "enable": true,
+            "enable": false,
             "fadeDuration": 0.5,
             "interpolationSteps": 100
         },
@@ -150,12 +150,12 @@
                 "placementStrategy": "free",
                 "positions": {
                     "eDP-1": {
-                        "x": 60,
+                        "x": 90,
                         "y": 130
                     }
                 },
                 "widgetId": "clock_hori",
-                "x": 60,
+                "x": 90,
                 "y": 130
             },
             {
@@ -165,14 +165,14 @@
                 "positions": {
                     "eDP-1": {
                         "scale": 0.9,
-                        "x": 78,
-                        "y": 430
+                        "x": 120,
+                        "y": 438
                     }
                 },
                 "scale": 0.9,
                 "widgetId": "water_reminder",
-                "x": 78,
-                "y": 430
+                "x": 120,
+                "y": 438
             },
             {
                 "id": "widget_quote_1790166416756",
@@ -181,14 +181,14 @@
                 "positions": {
                     "eDP-1": {
                         "scale": 0.9,
-                        "x": 304,
-                        "y": 430
+                        "x": 346,
+                        "y": 438
                     }
                 },
                 "scale": 0.9,
                 "widgetId": "quote",
-                "x": 304,
-                "y": 430
+                "x": 346,
+                "y": 438
             },
             {
                 "id": "widget_at_a_glance_1790166441754",
@@ -246,7 +246,7 @@
             "radius": 50
         },
         "hideWhenFullscreen": true,
-        "lightModeWallpaperPath": "$HOME/Pictures/Wallpapers/dharmx-digital/a_tower_in_a_forest.png",
+        "lightModeWallpaperPath": "$HOME/Pictures/Wallpapers/wallhaven_83okkj.jpg",
         "lockscreenWallpaperPath": "",
         "materialShapeScale": 1,
         "materialShapeShadow": true,
@@ -310,7 +310,7 @@
         "wallpaperAnimation": "random",
         "wallpaperEngineAssetsPath": "",
         "wallpaperEngineId": "",
-        "wallpaperPath": "$HOME/Pictures/Wallpapers/dharmx-digital/a_tower_in_a_forest.png",
+        "wallpaperPath": "$HOME/Pictures/Wallpapers/wallhaven_83okkj.jpg",
         "widgets": {
             "ai_chat": {
                 "enable": false,
@@ -1260,6 +1260,7 @@
             "disableDictation": false,
             "disableDiscordVoice": false,
             "disableEarbuds": false,
+            "disableEasyEffects": false,
             "disableFingerprint": false,
             "disableKdeConnectInLocalSend": false,
             "disableKeyboard": false,
@@ -1359,6 +1360,11 @@
                 {
                     "centered": false,
                     "id": "workspaces",
+                    "visible": true
+                },
+                {
+                    "centered": false,
+                    "id": "easyeffects_indicator",
                     "visible": true
                 }
             ],
@@ -1470,6 +1476,7 @@
             "showShortcutHint": true,
             "sizeMode": "compact"
         },
+        "sidebarClickOpen": true,
         "singleMonitorName": "",
         "sizes": {
             "height": 42,
@@ -1744,6 +1751,9 @@
                 "com.sec.android.app.clockpackage"
             ],
             "enable": true,
+            "ignorePackages": [
+                "com.samsung.android.app.routines"
+            ],
             "pollMinutes": 10
         },
         "showSecondsInApp": true,
@@ -1752,7 +1762,7 @@
         "timetableLeadMinutes": 15,
         "timetableLookaheadDays": 2
     },
-    "configVersion": 27,
+    "configVersion": 28,
     "conflictKiller": {
         "autoKillNotificationDaemons": false,
         "autoKillTrays": true
@@ -1788,6 +1798,7 @@
         "strict": true
     },
     "dock": {
+        "blockHoverInFullscreen": true,
         "dimInactiveIcons": true,
         "dockRadius": -1,
         "dockStyle": "floating",
@@ -2037,6 +2048,10 @@
                 "notchHeight": 36,
                 "side": "right"
             },
+            "easyEffects": {
+                "enable": true,
+                "side": "right"
+            },
             "fingerprint": {
                 "enable": true
             },
@@ -2137,6 +2152,14 @@
                 "ttlMs": 2000
             }
         }
+    },
+    "easyEffects": {
+        "appEnable": true,
+        "applyDeviceDefaultOnStart": true,
+        "cycleScope": "device",
+        "liveApply": true,
+        "osdOnSwitch": true,
+        "startTab": "last"
     },
     "hacks": {
         "arbitraryRaceConditionDelay": 20
@@ -2333,7 +2356,8 @@
             "enable": true
         },
         "zoomAnimation": {
-            "enabled": true
+            "enabled": true,
+            "style": "default"
         }
     },
     "lyricsService": {
@@ -2716,8 +2740,10 @@
         "zoomPercent": 100
     },
     "oledSaver": {
+        "antiBurnIn": false,
         "cursorHideDelay": 5,
-        "hintExtraDelay": 10
+        "enable": true,
+        "lockTimeout": 1
     },
     "osd": {
         "brightnessKeysOnly": false,
@@ -2773,7 +2799,9 @@
             "media",
             "volumeMixer",
             "resources",
-            "discordVoice"
+            "discordVoice",
+            "fpsLimiter",
+            "floatingImage"
         ],
         "clickthroughOpacity": 0.8,
         "darkenScreen": true,
@@ -2907,7 +2935,7 @@
         "phone": 1,
         "player": 1,
         "translator": 1,
-        "wallpapers": 0,
+        "wallpapers": 1,
         "weeb": 0
     },
     "regionSelector": {
@@ -3410,7 +3438,7 @@
             "showToolShelf": true,
             "showWorkspacesOverview": true,
             "sideResultLimit": 6,
-            "sortMode": "name",
+            "sortMode": "usage",
             "tileWidth": 0
         },
         "bubble": {
@@ -3656,7 +3684,8 @@
         "disconnectOnDisable": false,
         "enableDiagnostics": true,
         "enabled": false,
-        "killSwitch": false
+        "killSwitch": false,
+        "protonSecureCore": false
     },
     "waffles": {
         "actionCenter": {
