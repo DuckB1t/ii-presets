@@ -4,7 +4,7 @@ Community presets collection for [Illogical Impulse](https://github.com/vaxerski
 
 ## Available Presets
 
-- **Reguler Main** (`reguler-main`, v1.0.3)
+- **Reguler Main** (`reguler-main`, v1.0.4)
 
 ## How to Install
 
